@@ -1,0 +1,5 @@
+hisobot = int(input("Birinchi chorak bo'yicha: "))
+hisobot1 = int(input("Ikkinchi chorak bo'yicha: "))
+hisobot2 = int(input("Uchinchi chorak bo'yicha: "))
+hisobot3 = int(input("To'rtinchi chorak bo'yicha: "))
+print((hisobot + hisobot1)/(hisobot2 + hisobot3))
