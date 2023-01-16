@@ -1,11 +1,9 @@
 x = int(input("x ning qiymatini kiriting: "))
 if x > 0:
-  y = x - 12
-  print("y = ", y, "ga teng")
+    y = x - 12
 elif x < 0:
-  y = x ** 2
-  print("y = ", y, "ga teng")
+    y = x ** 2
 else:
-  x = 0 
-  y = 5
-  print("y = ", y, "ga teng")
+    y = 5
+    
+print("y = ", y, "ga teng")
