@@ -1,22 +1,33 @@
-chipta = int(input("Chipta raqamini kiriting: "))
-while chipta > 0:
-  dastlabki_uchlik = chipta // 1000
-  dastlabki_uchlik_yigindi = 0
-  if dastlabki_uchlik > 0: 
-    while dastlabki_uchlik != 0:
-      raqam1 = dastlabki_uchlik % 10
-      dastlabki_uchlik_yigindi += raqam1
-      dastlabki_uchlik //= 10     
-  oxirgi_uchlik = chipta % 1000
-  oxirgi_uchlik_yigindi = 0
-  if oxirgi_uchlik > 0:
-    while oxirgi_uchlik != 0:
-      raqam2 = oxirgi_uchlik % 10
-      oxirgi_uchlik_yigindi += raqam2
-      oxirgi_uchlik //= 10
-  if dastlabki_uchlik == oxirgi_uchlik and dastlabki_uchlik_yigindi == oxirgi_uchlik_yigindi:
-    print(f"{chipta} raqamli chipta omadli")
-    break
-  else:
-    print(f"{chipta} raqamli chipta omadsiz ")
-    break
+# ticket = int(input("Chipta raqamini kiriting: "))
+# chipta = ticket
+# raqamlar = []
+# while ticket != 0:
+#   a = ticket % 10
+#   raqamlar.append(a)
+#   ticket //= 10  
+# the_first_three = (raqamlar[0] + raqamlar[1] + raqamlar[2])
+# the_last_three = (raqamlar[3] + raqamlar[4] + raqamlar[5])
+# if the_first_three == the_last_three:
+#     print(f"{chipta} raqamli chipta omadli")
+# else:
+#     print(f"{chipta} raqamli chipta omadsiz ")
+
+
+number = int(input("Введите номер билетика: "))
+count = 0
+sum_left = 0
+sum_right = 0
+
+while count != 6:
+    slices = number % 10
+    if count < 3:
+        sum_right += slices
+        number //= 10
+    else:
+        sum_left += slices
+        number //= 10
+    count += 1
+if sum_left == sum_right:
+    print('Билет счастливый!')
+else:
+    print('Не удачный билет!')
