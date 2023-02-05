@@ -17,12 +17,15 @@ cost_annual = 0
 parents_money = 0
  
 for month in range(1, 11):
-  scholarship_annual += scholarship
-  cost_annual += cost
-  a = cost * 3 / 100 
-  cost_annual += a
-  parents_money += cost_annual - scholarship_annual
+  if month == 1:
+    scholarship_annual += scholarship
+    cost_annual += cost
+  elif month > 1:  
+    scholarship_annual += scholarship
+    cost *= 1.03 
+    cost_annual += cost
+    
   
-print(parents_money)
-print(f"Ota - onasida so'rashlari")
-  
+print(f"Ota - onasidan so'rashlari {cost_annual-scholarship_annual}")
+
+

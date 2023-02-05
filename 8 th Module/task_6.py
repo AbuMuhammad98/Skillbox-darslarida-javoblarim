@@ -10,9 +10,9 @@ print('6-topshiriq. Xat')
 
 a = int(input("Xatning o'lchami: "))
 count = 0
-step = a // 4
-for i in range(a, 1, - step):
-  print(f"Xatning o'chami {i}")
-  count += 1
-  print(f"Taklamlar soni: {count}")
+step = a // 2
+for i in range(a, 13, -step):
+  count += 2
+  
+print(f"Taklamlar soni: {count} ta bo'lishi kerak")
   
