@@ -16,14 +16,12 @@ for harf in matn:
   
   if harf != ' ':
     harflar_soni += 1   
-    
-    print(f"if : {harflar_soni}")
-    
-  elif harflar_soni > eng_uzun:
-    eng_uzun = harflar_soni
-    harflar_soni = 0
+  else:
+      if harflar_soni > eng_uzun:
+        eng_uzun = harflar_soni
+      harflar_soni = 0
 
     
-    print(f"Elif : {harflar_soni}")
-    print(f"Eng uzun so'zning uzunligi: {eng_uzun}")
+    
+print(f"Eng uzun so'zning uzunligi: {eng_uzun}")
 

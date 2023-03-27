@@ -8,4 +8,4 @@ print('8-topshiriq. Коlontitul')
 belgi  = int(input("Kolontitulning umumiy uzunligi: "))
 belgi1 = int(input("Undov belgisining kerakli miqdori: "))
 for kontitul in range(1):
-  print("~" * belgi + '!' * belgi1 + "~" * belgi)
+  print("~" * (belgi // 2) + '!' * belgi1 + "~" * (belgi // 2) )

@@ -6,9 +6,9 @@ print('9-topshiriq. Sigirlar')
 # bu erda a - bo'sh xona, b-band.
 
 # Foydalanuvchining dastur bilan quyidagi o'zaro ta'sirini hisobga olgan holda molxonadan olingan sutni hisoblash uchun dastur yozing: foydalanuvchi 10 ta a va b belgidan iborat qatorni kiritadi . Bir kunda qancha sut ishlab chiqarilishini aniqlash kerak bo'ladi.
+string = input('Введите строку из букв a и b, лат. буквами: ')
 milk = 0
 for i in range(10):
-  string = input('Введите строку из букв a и b, лат. буквами: ')
-  if string == 'b':
+  if string[i] == 'b':
     milk += 2 * (i + 1)
 print('Молока всего: ', milk)
